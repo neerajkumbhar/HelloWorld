@@ -21,8 +21,10 @@ import org.springframework.web.bind.annotation.RequestMethod
 @ComponentScan
 class HelloConfig {
   
-   @RequestMapping(Array("/"))
-   method=Array(RequestMethod.GET))
+   //@RequestMapping(Array("/"))
+  
+  
+   @RequestMapping(value=Array("/"), method=Array(RequestMethod.GET))
    def mapResponse() = "Hello world. This is Spring Boot Hello World application. This is a demo application showing the successful execution of Scala + Spring Boot"
   
 }
